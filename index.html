@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fight or Flight</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-..."
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <img src="squid.png" style="float: left;" width="100px">
+        <a href="bonus.html" target="_blank" id="bonusButton" style="float: right;">Bonus</a>
+    </div>
+    <div>
+        <img src="title.png" style="width: 700px; padding-top: 1%; padding-bottom: 1%;">
+    </div>
+    <button onclick="spin()">🎯 Spin for Speaker</button>
+    <canvas id="wheelCanvas" width="300" height="300"></canvas>
+    <div id="speaker"></div>
+
+
+    <button onclick="generatePrompt()">💡 Get Question</button>
+    <div id="promptCard">
+        <div id="prompt">Questions will appear here</div>
+    </div>
+    <div id="timer">⏱️ 10</div>
+
+    <div id="choiceButtons">
+        <button onclick="choose('fight')"><i class="fa-solid fa-hand-fist"></i> Fight</button>
+        <button onclick="choose('flight')"><i class="fa-solid fa-person-running"></i> Flight</button>
+    </div>
+
+    <div id="twist"></div>
+
+    <audio id="boom" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

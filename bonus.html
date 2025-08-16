@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trolley Problem – Bonus Game</title>
+    <link rel="stylesheet" href="trolley.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <img src="squid.png" style="float: left;" width="100px">
+    </div>
+    <h1>🚂 The Trolley Problem</h1>
+    <p style="font-size: large;">You see a runaway trolley speeding down the tracks. You can pull the lever to divert
+        it.</p>
+
+    <img src="train.png" alt="Trolley Problem" id="trolleyImage">
+
+    <div id="choices">
+        <button onclick="choose('family')">🔴 Save 1 Family Member</button>
+        <button onclick="choose('strangers')">🟢 Save 5 Innocent People</button>
+    </div>
+
+    <div id="twist"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
