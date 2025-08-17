@@ -152,7 +152,7 @@ function resetAll() {
   clearInterval(timerInterval);
 }
 
-function choose(option) {
+function chooseTrack(option) {
   let message = "";
   if (option === "family") {
     message = "💔 You saved your family member. The 5 innocents were lost. How do you live with this choice?";
@@ -160,4 +160,5 @@ function choose(option) {
     message = "😢 You saved 5 strangers. Your loved one is gone. What does this say about your values?";
   }
   document.getElementById("twist").innerHTML = `<strong>${message}</strong>`;
+
 }
